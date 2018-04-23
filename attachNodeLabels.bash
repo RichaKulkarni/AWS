@@ -32,7 +32,7 @@ for i in $(seq 1 $core_count); do
    nodeLabelCORE=`echo "${currCORE//./-}"`
    echo $nodeLabelCORE
    #attach node label to core nodes
-   fullNodeLabelCommand="sudo yarn rmadmin -replaceLabelsOnNode ip-$nodeLabelCORE.lattice.local=CORE"
+   fullNodeLabelCommand="sudo yarn rmadmin -replaceLabelsOnNode ip-$nodeLabelCORE=CORE"
    echo $fullNodeLabelCommand
    #ssh into each core node and run node attach command on them
    sudo ssh -o StrictHostKeyChecking=no -i /root/.ssh/yours.pem ec2-user@$currCORE "$fullNodeLabelCommand"  
