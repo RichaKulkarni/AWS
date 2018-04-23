@@ -1,4 +1,4 @@
-sudo aws s3 cp s3://latticeengines-dev-emr/scripts/tezUI.sh /scripts/
-sudo aws s3 cp s3://latticeengines-dev-emr/scripts/nodeLabels.sh /scripts/
-sudo aws s3 cp s3://latticeengines-dev-emr/scripts/attachNodeLabels.bash /scripts/
-sudo aws s3 cp s3://latticeengines-dev-emr/scripts/downloadPemSSH.bash /scripts/
+sudo aws s3 cp s3://S3_BUCKET_EMR/tezUI.sh /scripts/
+sudo aws s3 cp s3://S3_BUCKET_EMR/nodeLabels.sh /scripts/
+sudo aws s3 cp s3://S3_BUCKET_EMR/attachNodeLabels.bash /scripts/
+sudo aws s3 cp s3://S3_BUCKET_EMR/downloadPemSSH.bash /scripts/
