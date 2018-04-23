@@ -1,0 +1,17 @@
+[
+  {
+    "Classification": "yarn-site",
+    "Properties": {
+      "yarn.node-labels.fs-store.root-dir": "hdfs:///yarn/node-labels/",
+      "yarn.node-labels.enabled": "true"
+    }
+  },
+  {
+    "Classification": "tez-site",
+    "Properties": {
+      "tez.lib.uris": "hdfs:///apps/tez/tez-0.9.0.tar.gz",
+      "tez.history.logging.service.class": "org.apache.tez.dag.history.logging.ats.ATSHistoryLoggingService",
+      "tez.allow.disabled.timeline-domains": "true"      
+    }
+  }
+]
