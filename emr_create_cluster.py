@@ -200,17 +200,6 @@ cluster_id = connection.run_job_flow(
                     str_core_count
                 ]
             }
-        },
-        {
-            'Name': 'Add Tenable and Splunk',
-            'ActionOnFailure': 'CONTINUE',
-            'HadoopJarStep': {
-                'Jar': 'command-runner.jar',
-                'Args': [
-                    '/bin/bash',
-                    '/scripts/ecs_host_bootstrap.sh'
-                ]
-            }
         }
     ],
     Applications=[{'Name':'Hadoop'}, {'Name':'Tez'}],
