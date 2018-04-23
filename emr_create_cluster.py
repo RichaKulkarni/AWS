@@ -144,17 +144,6 @@ cluster_id = connection.run_job_flow(
             }
         },
         {
-            'Name': 'Cron Scheduler Script',
-            'ActionOnFailure': 'CONTINUE',
-            'HadoopJarStep': {
-                'Jar': 'command-runner.jar',
-                'Args': [
-                    '/bin/bash',
-                    '/scripts/cronScheduler.bash'
-                ]
-            }
-        },
-        {
             'Name': 'TEZ Jar Load',
             'ActionOnFailure': 'CONTINUE',
             'HadoopJarStep': {
