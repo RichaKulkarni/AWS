@@ -103,10 +103,6 @@ cluster_id = connection.run_job_flow(
     JobFlowRole='EMR_EC2_Role',
     Tags=[
         {
-            'Key': 'le-service',
-            'Value': 'emr',
-        },
-        {
             'Key': 'emr_cluster_name',
             'Value': args.cluster_name,
         },
